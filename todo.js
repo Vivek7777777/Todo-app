@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 //including static css file in public folder
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true})
+mongoose.connect("mongodb://0.0.0.0:27017/todolistDB", {useNewUrlParser: true})
 
 //creating schema
 const itemsSchema = {
